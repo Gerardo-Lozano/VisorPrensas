@@ -4,12 +4,19 @@ Public Class Form2
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
 
         Try
+            'Variables para el rango de fechas
+            Dim Fecha_1 As String
+            Dim Fecha_2 As String
+
+            Fecha_1 = DateTimePicker1.Text
+            Fecha_2 = DateTimePicker2.Text
+
             'Leer del Master data los demas campos
 
             Dim consulta_a_sql As String
             Dim lista_a_sql As String
 
-            consulta_a_sql = "SELECT * FROM ALPHA_MTY_WIRE_EXTRUSION_EX01 ORDER BY DATE"
+            consulta_a_sql = "SELECT * FROM ALPHA_MTY_WIRE_EXTRUSION_EX01 WHERE DATE between '" & Fecha_1 & "' and '" & Fecha_2 & "' ORDER BY WO"
 
             adaptador_a_sql = New SqlDataAdapter(consulta_a_sql, ConexionSQL.ConexionSQL)
             ConexionSQL.registro_a_sql = New DataSet
