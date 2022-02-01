@@ -30,16 +30,17 @@ Partial Class Form3
         Me.Label1 = New System.Windows.Forms.Label()
         Me.DateTimePicker2 = New System.Windows.Forms.DateTimePicker()
         Me.DateTimePicker1 = New System.Windows.Forms.DateTimePicker()
+        Me.Button3 = New System.Windows.Forms.Button()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Button2
         '
-        Me.Button2.Location = New System.Drawing.Point(414, 49)
+        Me.Button2.Location = New System.Drawing.Point(420, 60)
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(279, 23)
         Me.Button2.TabIndex = 5
-        Me.Button2.Text = "Cargar información"
+        Me.Button2.Text = "Cargar por fechas"
         Me.Button2.UseVisualStyleBackColor = True
         '
         'Button1
@@ -105,11 +106,21 @@ Partial Class Form3
         Me.DateTimePicker1.Size = New System.Drawing.Size(132, 20)
         Me.DateTimePicker1.TabIndex = 8
         '
+        'Button3
+        '
+        Me.Button3.Location = New System.Drawing.Point(12, 60)
+        Me.Button3.Name = "Button3"
+        Me.Button3.Size = New System.Drawing.Size(279, 23)
+        Me.Button3.TabIndex = 13
+        Me.Button3.Text = "Cargar toda la información"
+        Me.Button3.UseVisualStyleBackColor = True
+        '
         'Form3
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(1107, 654)
+        Me.Controls.Add(Me.Button3)
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Label1)
@@ -136,4 +147,5 @@ Partial Class Form3
     Friend WithEvents Label1 As Label
     Friend WithEvents DateTimePicker2 As DateTimePicker
     Friend WithEvents DateTimePicker1 As DateTimePicker
+    Friend WithEvents Button3 As Button
 End Class
