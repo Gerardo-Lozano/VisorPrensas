@@ -88,7 +88,7 @@ Partial Class Form4
         '
         'DateTimePicker2
         '
-        Me.DateTimePicker2.CustomFormat = "MMM/dd/yyyy"
+        Me.DateTimePicker2.CustomFormat = "MM/dd/yyyy"
         Me.DateTimePicker2.Format = System.Windows.Forms.DateTimePickerFormat.Custom
         Me.DateTimePicker2.Location = New System.Drawing.Point(579, 23)
         Me.DateTimePicker2.Name = "DateTimePicker2"
@@ -98,7 +98,7 @@ Partial Class Form4
         'DateTimePicker1
         '
         Me.DateTimePicker1.Checked = False
-        Me.DateTimePicker1.CustomFormat = "MMM/dd/yyyy"
+        Me.DateTimePicker1.CustomFormat = "MM/dd/yyyy"
         Me.DateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Custom
         Me.DateTimePicker1.Location = New System.Drawing.Point(415, 23)
         Me.DateTimePicker1.Name = "DateTimePicker1"
