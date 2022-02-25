@@ -53,4 +53,8 @@ Public Class Form4
 
         End Try
     End Sub
+
+    Private Sub Button4_Click(sender As Object, e As EventArgs) Handles Button4.Click
+        Form5.Show()
+    End Sub
 End Class
