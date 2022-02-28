@@ -31,6 +31,7 @@ Partial Class Form2
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Button3 = New System.Windows.Forms.Button()
+        Me.Button4 = New System.Windows.Forms.Button()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -115,11 +116,22 @@ Partial Class Form2
         Me.Button3.Text = "Cargar toda la información"
         Me.Button3.UseVisualStyleBackColor = True
         '
+        'Button4
+        '
+        Me.Button4.BackColor = System.Drawing.SystemColors.MenuHighlight
+        Me.Button4.Location = New System.Drawing.Point(688, 52)
+        Me.Button4.Name = "Button4"
+        Me.Button4.Size = New System.Drawing.Size(132, 24)
+        Me.Button4.TabIndex = 52
+        Me.Button4.Text = "FLUX % GRAPH "
+        Me.Button4.UseVisualStyleBackColor = False
+        '
         'Form2
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(1107, 654)
+        Me.Controls.Add(Me.Button4)
         Me.Controls.Add(Me.Button3)
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.Label2)
@@ -148,4 +160,5 @@ Partial Class Form2
     Friend WithEvents Label2 As Label
     Friend WithEvents Label3 As Label
     Friend WithEvents Button3 As Button
+    Friend WithEvents Button4 As Button
 End Class

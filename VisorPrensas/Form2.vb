@@ -53,4 +53,8 @@ Public Class Form2
             MsgBox("PROBLEMA CON DISPARAR DATOS AL RESUMEN:" & ex.Message)
         End Try
     End Sub
+
+    Private Sub Button4_Click(sender As Object, e As EventArgs) Handles Button4.Click
+        Form6.Show()
+    End Sub
 End Class

@@ -1,5 +1,5 @@
 ﻿Imports System.Data.SqlClient
-Public Class Form5
+Public Class Form6
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
 
 
@@ -100,6 +100,7 @@ Public Class Form5
     End Sub
 
     Private Sub Button7_Click(sender As Object, e As EventArgs) Handles Button7.Click
+
         If TextBox1.Text = "" Then
             MsgBox("Favor de capturar una WO")
             Return
@@ -111,7 +112,7 @@ Public Class Form5
             Dim consulta_a_sql As String
             Dim lista_a_sql As String
 
-            consulta_a_sql = "SELECT [WO],[MACHINE],[DATE],[HOUR],[ITEM],[DESCRIPTION],[LOT],[LB_REQUEST],[FLUX_PERCENT],[LB_PRODUCTION],[GOOD_LB],[AVAILABILITY],[PERFORMANCE],[QUALITY],[OEE],[FLOW_RATE_1],[FLOW_RATE_2],[FLOW_RATE_3],[FLOW_RATE_4],[FLOW_RATE_5],[FLOW_RATE_6],[FLOW_RATE_7],[FLOW_RATE_8],[SCRAP] FROM [OEE_data].[dbo].[ALPHA_MTY_WIRE_EXTRUSION_EX03] WHERE WO = '" & TextBox1.Text & "'"
+            consulta_a_sql = "SELECT [WO],[MACHINE],[DATE],[HOUR],[ITEM],[DESCRIPTION],[LOT],[LB_REQUEST],[FLUX_PERCENT],[LB_PRODUCTION],[GOOD_LB],[AVAILABILITY],[PERFORMANCE],[QUALITY],[OEE],[FLOW_RATE_1],[FLOW_RATE_2],[FLOW_RATE_3],[FLOW_RATE_4],[FLOW_RATE_5],[FLOW_RATE_6],[FLOW_RATE_7],[FLOW_RATE_8],[SCRAP] FROM [OEE_data].[dbo].[ALPHA_MTY_WIRE_EXTRUSION_EX01] WHERE WO = '" & TextBox1.Text & "'"
 
             adaptador_a_sql = New SqlDataAdapter(consulta_a_sql, ConexionSQL.ConexionSQL)
             ConexionSQL.registro_a_sql = New DataSet
